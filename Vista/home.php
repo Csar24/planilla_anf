@@ -1,3 +1,19 @@
+
+<?php
+session_start(); // Inicia la sesión, 
+if (isset($_SESSION['usuario'])) {
+    // Si la sesión del usuario existe, significa que han iniciado sesión
+    $usuario = $_SESSION['usuario'];
+
+    // El código de home.php va aquí
+} else {
+    // Si la sesión del usuario no existe, redirige a la página de inicio de sesión o muestra un mensaje de error
+    header('Location: ../Vista/login.php');
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -136,19 +152,17 @@
 
   <!-- Scrip de la Pagina -->
   <script>
+    
     let sidebar = document.querySelector(".sidebar");
     let closeBtn = document.querySelector("#btn");
-    let searchBtn = document.querySelector(".bx-search");
+    
 
     closeBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("open");
     menuBtnChange();//calling the function(optional)
     });
 
-    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-    sidebar.classList.toggle("open");
-    menuBtnChange(); //calling the function(optional)
-    });
+    
 
     // following are the code to change sidebar button(optional)
     function menuBtnChange() {

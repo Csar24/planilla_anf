@@ -8,6 +8,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if (validarCredenciales($usuario, $contrasena)) {
         // Las credenciales son válidas, redirige a la página principal
+        session_start();
+        $_SESSION['usuario'] = $usuario; // Almacena la información del usuario en la sesión
+
         header("Location: ../Vista/home.php");
         exit();
     } else {
