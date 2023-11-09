@@ -30,6 +30,9 @@ if (isset($_SESSION['usuario'])) {
     <!--local -->
     <link rel="stylesheet" href="../assets/CSS/style_home.css">
 
+    <script src="../assets/JS/jquery-3.7.1.min.js" ></script>
+    <script src="../assets/JS/menu.js" ></script>
+
     <title> Responsive Sidebar Menu  | CodingLab </title>
     
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -150,6 +153,25 @@ if (isset($_SESSION['usuario'])) {
   </section>
 
 
+<!-- Modal informativo -->
+  <div class="modal fade" id="modalExitoso" tabindex="-1" role="dialog" aria-labelledby="modalExitosoLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalExitosoLabel">Solicitud Procesada con Éxito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¡La solicitud se ha procesado exitosamente!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
   <!-- Scrip de la Pagina -->
   <script>
     
@@ -201,8 +223,23 @@ if (isset($_SESSION['usuario'])) {
 
   </Script>
 
-<script src="../assets/JS/jquery-3.7.1.min.js" ></script>
-<script src="../assets/JS/menu.js" ></script>
+<?php
+    session_start();
+
+    if (isset($_SESSION['exito_registro']) && $_SESSION['exito_registro'] === true) {
+    echo '<script>
+            $(document).ready(function() {
+                $("#modalExitoso").modal("show");
+            });
+            
+
+          </script>';
+          
+    unset($_SESSION['exito_registro']); // Limpia la variable de sesión
+   }
+?>
+
+
 
 </body>
 </html>

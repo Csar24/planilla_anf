@@ -54,7 +54,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body">
-            <form id="formProfesor" action="#">
+            <form id="formEmpleados" action="../Controlador/empleados_controlador.php" method="post">
             <div class="row">
                <div style="overflow: auto;height: 500px">
                   <input type="hidden" id="txtIdProfesor" name="txtIdProfesor" class="form-control form-control-lg"/>
@@ -64,13 +64,13 @@
                   <p  class="text-success" style="font-size: 20px">Nombre:</p>
                      <div class="col-md-6">
                        <div class="form-outline mb-2">
-                        <input type="text" id="txtNombre"  placeholder="Primer Nombre" name="txtNombre" class="form-control form-control-lg" style="font-size: 15px;width: 100%; " required/>
+                        <input type="text" id="txtNombre"  placeholder="Primer Nombre" name="txtprimerNombre" class="form-control form-control-lg" style="font-size: 15px;width: 100%; " required/>
                         <label class="form-label" for="txtNombre" style="width: 100%"></label>
                        </div>
                      </div>
                      <div class="col-md-6">
                        <div class="form-outline mb-2"> 
-                        <input type="text" id="txtNombre"  placeholder="Segundo Nombre" name="txtNombre" class="form-control form-control-lg" style="font-size: 15px;width: 100%" required/>
+                        <input type="text" id="txtNombre"  placeholder="Segundo Nombre" name="txtsegundoNombre" class="form-control form-control-lg" style="font-size: 15px;width: 100%" required/>
                         <label class="form-label" for="txtNombre" style="width: 100%"></label>
                        </div>
                      </div>
@@ -80,13 +80,13 @@
                   <p class="text-success" style="font-size: 20px">Apellidos:</p>
                      <div class="col-md-6">
                        <div class="form-outline mb-2">
-                        <input type="text" id="txtNombre"  placeholder="Primer Apellido" name="txtNombre" class="form-control form-control-lg" style="font-size: 15px;width: 100%" required/>
+                        <input type="text" id="txtNombre"  placeholder="Primer Apellido" name="txtprimerApellido" class="form-control form-control-lg" style="font-size: 15px;width: 100%" required/>
                         <label class="form-label" for="txtNombre" style="width: 100%"></label>
                        </div>
                      </div>
                      <div class="col-md-6">
                        <div class="form-outline mb-2"> 
-                        <input type="text" id="txtNombre"  placeholder="Segundo Apellido" name="txtNombre" class="form-control form-control-lg" style="font-size: 15px;width: 100%" required/>
+                        <input type="text" id="txtNombre"  placeholder="Segundo Apellido" name="txtsegundoApellido" class="form-control form-control-lg" style="font-size: 15px;width: 100%" required/>
                         <label class="form-label" for="txtNombre" style="width: 100%"></label>
                        </div>
                      </div>
@@ -94,7 +94,7 @@
                   <!-- Dui -->
                   <div class="form-outline mb-2">
                       <p class="text-success" style="font-size: 20px">DUI</p>
-                      <input type="text" id="txtDUI" placeholder="DUI del Empleado" name="txtDUI" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
+                      <input type="number" id="txtDUI" placeholder="DUI del Empleado" name="txtDUI" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
                       <label class="form-label" for="txtDUI" style="width: 100%"></label>
                   </div>
                   <!-- Sexo -->
@@ -112,31 +112,31 @@
                   <!-- Fecha Nacimiento -->
                   <div  class="form-outline mb-2">
                       <p class="text-success" style="font-size: 20px">Fecha de Nacimiento</p>
-                      <input type="date" id="txtDireccion"  name="txtDireccion" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
-                      <label class="form-label" for="txtDireccion"  style="width: 100%"></label>
+                      <input type="date" id="txtFechaNacimiento"  name="txtFechaNacimiento" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
+                      <label class="form-label" for="txtFechaNacimiento"  style="width: 100%"></label>
                   </div>
                   <!-- Fecha de ingreso -->
                   <div class="form-outline mb-2">
                       <p style="font-size: 20px">Fecha de Ingreso</p>
-                      <input type="date" id="txtDireccion" name="txtDireccion" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
-                      <label class="form-label" for="txtDireccion"  style="width: 100%"></label>
+                      <input type="date" id="txtFechaIngreso" name="txtFechaIngreso" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
+                      <label class="form-label" for="txtFechaIngreso"  style="width: 100%"></label>
                   </div>
                   <!-- Cargo -->
                   <div class="form-outline mb-2">
                       <p  class="text-success" style="font-size: 20px">Cargo</p>
-                      <input type="text" id="txtDireccion" placeholder="Cargoen la Empresa" name="txtDireccion" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
-                      <label class="form-label" for="txtDireccion"  style="width: 100%"></label>
+                      <input type="text" id="txtCargo" placeholder="Cargo en la Empresa" name="txtCargo" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
+                      <label class="form-label" for="txtCargo"  style="width: 100%"></label>
                   </div>
                   <!-- Sueldo -->
                   <div class="form-outline mb-2">
                       <p  class="text-success" style="font-size: 20px">Sueldo</p>
-                      <input type="number" id="txtDireccion" placeholder="Ingresar Sueldo Mensual " name="txtDireccion" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
-                      <label class="form-label" for="txtDireccion"  style="width: 100%"></label>
+                      <input type="number" id="txtSueldo" placeholder="Ingresar Sueldo Mensual " name="txtSueldo" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
+                      <label class="form-label" for="txtSueldo"  style="width: 100%"></label>
                   </div>
                   <!-- Seguro medico -->
                   <div class="form-outline mb-2">
                   <p class="text-success" style="font-size: 20px">Seguro</p>                      
-                      <select class="form-select form-control form-control-lg"  style="font-size:15px; width: 100%" id="sexo" name="sexo">
+                      <select class="form-select form-control form-control-lg"  style="font-size:15px; width: 100%" id="seguro" name="seguro">
                         <option value="ISSS">ISSS</option>
                         <option value="OTRO">OTRO</option>                      
                       </select>
@@ -144,7 +144,7 @@
                   <!-- Pension -->
                   <div class="form-outline mb-2">
                   <p  class="text-success" style="font-size: 20px">Pension</p>                      
-                      <select class="form-select form-control form-control-lg"  style="font-size:15px; width: 100%" id="sexo" name="sexo">
+                      <select class="form-select form-control form-control-lg"  style="font-size:15px; width: 100%" id="pension" name="pension">
                         <option value="Crecer">AFP Crecer</option>
                         <option value="Confia">AFP Confia</option>                      
                       </select>
@@ -152,23 +152,20 @@
                   <!-- numero de Afiliado -->
                   <div class="form-outline mb-2">
                       <p  class="text-success" style="font-size: 20px">Numero de Afiliado</p>
-                      <input type="number" id="txtDireccion" placeholder="Numero de Pension" name="txtDireccion" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
-                      <label class="form-label" for="txtDireccion"  style="width: 100%"></label>
+                      <input type="number" id="txtNumeroAfiliado" placeholder="Numero de Pension" name="txtNumeroAfiliado" class="form-control form-control-lg" style="font-size:15px; width: 100%" required/>
+                      <label class="form-label" for="txtNumeroAfiliado"  style="width: 100%"></label>
                   </div>
 
                   
                 </div>
             </div>
                 
-                  <!-- <div class="form-outline pb-2 text-center" style="margin:auto">
-                      <button class="btn btn-success"  type="submit"><i><i class="fas fa-save"></i></i> Guardar</button>
-                      <button type="button" class="btn btn-danger ml-3" data-dismiss="modal" onclick="cerrarModal()"><I><i class="fas fa-times"></i></i> Cerrar</button>
-                  </div> -->
+            <div class="modal-footer ">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+               <button type="submit" class="btn btn-success">Guardar cambios</button>
+            </div>
         </div>
-        <div class="modal-footer ">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-success">Guardar cambios</button>
-        </div>
+       
       </div>
     </div>
 
