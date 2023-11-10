@@ -7,7 +7,7 @@
     <!-- Utiliza clases de Bootstrap para la tabla -->
     
     <div class="tabla table-responsive col-8" id="scrollable-table">
-     <table class="table table-dark table-bordered">
+     <table class="table table-dark table-bordered" id="tabla1">
         <thead >
             <tr >
                 <th >Codigo</th>
@@ -32,16 +32,18 @@
                 <th>Descuento ISS</th>
                 <th>Descuento RENTA</th>
                 <th>Total Descuentos</th>
+                <th>Total a Pagar</th>
                 <!-- Total Descuentos = descuentos de todo lo anterior -->
             </tr>
         </thead>
-        <tbody class="table table-striped">
+        <tbody >
 
                <?php foreach ($empleados as $empleado) : ?>
-                <tr>
+                <tr class="table table-striped">
                     <td><?php echo $empleado['id']; ?></td>
                     <td><?php echo $empleado['primernombre'] . ' ' . $empleado['primerapellido']; ?></td>                    
                     <td><?php echo $empleado['sueldo']; ?></td>
+                    <td class="editable-cell" ></td>
                     <td class="editable-cell" ></td>
                     <td class="editable-cell" ></td>
                     <td class="editable-cell" ></td>
@@ -72,75 +74,81 @@
       <!-- Segundo contenedor con el 30% (4 de 12 columnas) -->
         
         <div class="tabla table-responsive tabla col-4" >
-          <table class="table table-striped table-bordered">
+          <table class="table table-bordered" id="tabla2" >
             <thead>
               <tr>
-                <th>Nombre</th>
-                <th>Total Devengado</th>
-                <th>Total Descuento</th>                            
-                <th>Total Apagar</th>
+                
                                
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Cesar Gonzalez</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Cesar Gonzalez</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Cesar Gonzalez</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>   
-              <tr>
-                <td>Cesar Gonzalez</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Cesar Gonzalez</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Cesar Gonzalez</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Cesar Gonzalez</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              
+            <tbody class="table table-striped">
               
              
             </tbody>
           </table>
         </div>
+
+        <h4 id="informacionEmpleado" style="padding-top: 1rem">Información del Empleado</h4>
       
     
 </div>
+
+
 
     <!-- Añade el enlace al archivo de JavaScript de Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <!-- Script funcionalidad de la tabla -->
-   <Script src="../Vista/Planilla/jsplanillasalario.js"></Script> 
+   <Script src="../Vista/Planilla/jsplanillasalario.js">
+   </Script> 
 
+   <script>
+    // Obtener la referencia de las tablas
+    var tablaOrigen = document.getElementById('tabla1');
+    var tablaDestino = document.getElementById('tabla2');
+
+    // Agregar manualmente la primera fila (encabezado) a la tabla de destino
+    var primeraFilaOrigen = tablaOrigen.querySelector('thead tr');
+    var primeraFilaDestino = tablaDestino.createTHead().insertRow(0);
+
+    // Obtener las columnas específicas que deseas copiar
+    var columnasEspecificas = ["Nombre", "Total Devengado", "Total Descuentos", "Total a Pagar"];
+
+    for (var j = 0; j < primeraFilaOrigen.cells.length; j++) {
+        // Verificar si la columna actual está en la lista de columnas específicas
+        if (columnasEspecificas.includes(primeraFilaOrigen.cells[j].textContent)) {
+            // Crear una nueva celda en la fila de destino
+            var nuevaCeldaDestino = primeraFilaDestino.insertCell(-1);
+
+            // Copiar el contenido de la celda de origen a la celda de destino
+            nuevaCeldaDestino.innerHTML = primeraFilaOrigen.cells[j].innerHTML;
+        }
+    }
+
+    // Obtener todas las filas de la tabla de origen (excluyendo el encabezado)
+    var filasOrigen = tablaOrigen.querySelectorAll('tbody tr');
+
+    // Iterar a través de las filas de la tabla de origen
+    for (var i = 0; i < filasOrigen.length; i++) {
+        // Crear una nueva fila en la tabla de destino
+        var nuevaFilaDestino = tablaDestino.insertRow(i + 1);
+
+        // Obtener las celdas de la fila de origen
+        var celdasOrigen = filasOrigen[i].getElementsByTagName('td');
+
+        // Iterar a través de las celdas de la fila de origen
+        for (var j = 0; j < celdasOrigen.length; j++) {
+            // Verificar si la columna actual está en la lista de columnas específicas
+            if (columnasEspecificas.includes(primeraFilaOrigen.cells[j].textContent)) {
+                // Crear una nueva celda en la fila de destino
+                var nuevaCeldaDestino = nuevaFilaDestino.insertCell(-1);
+
+                // Copiar el contenido de la celda de origen a la celda de destino
+                nuevaCeldaDestino.innerHTML = celdasOrigen[j].innerHTML;
+            }
+        }
+    }
+</script>
 
         
     <style>
@@ -160,7 +168,7 @@
     </style>
 
     
-  <!-- Scroole la tabla 1 -->
+  <!-- Scrooll la tabla 1 -->
   <script>
     // Obtén la fila original del encabezado
     var theadOriginalRow = document.querySelector("table thead tr");
@@ -202,7 +210,9 @@
     });
 </script>
 
-<!-- Script tabla 2 -->
+
+
+<!-- Scroll Script tabla 2 -->
 <script>
     // Obtén la fila original del encabezado del segundo contenedor
     var secondContainerTheadOriginalRow = document.querySelector(".tabla.col-4 table thead tr");
