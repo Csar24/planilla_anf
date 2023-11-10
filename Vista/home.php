@@ -64,7 +64,7 @@ if (isset($_SESSION['usuario'])) {
                 <span class="tooltip1">Planillas Salarios</span>
              </div>
              <div class= "item2">
-                <a class="nav-link" href="../Vista/Empleados/empleados.php"   id="sub-menu-aguinaldo" style="margin: 0.1rem;">
+                <a class="nav-link" href="../Controlador/empleados_visualizar.php"   id="sub-menu-aguinaldo" style="margin: 0.1rem;">
                     <i class='bx bx-book-bookmark'></i>                    
                     <span class="links_name" >Planillas de Aguinaldo</span>
                 </a>
@@ -78,7 +78,7 @@ if (isset($_SESSION['usuario'])) {
       
       <!-- Empleados -->
       <li id="Menu_empleados" >
-       <a class="nav-link" href="../Vista/Empleados/empleados.php">
+       <a class="nav-link" href="../Controlador/empleados_visualizar.php" >
          <i class='bx bx-user' ></i>
          <span class="links_name">Empleado</span>
        </a>
@@ -195,6 +195,11 @@ if (isset($_SESSION['usuario'])) {
    }
    }
   </script>
+
+
+
+
+
   <!-- Submenu -->
   <Script>
       
@@ -223,8 +228,12 @@ if (isset($_SESSION['usuario'])) {
 
   </Script>
 
+      
+
+  
+
 <?php
-    session_start();
+    
 
     if (isset($_SESSION['exito_registro']) && $_SESSION['exito_registro'] === true) {
     echo '<script>

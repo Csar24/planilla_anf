@@ -1,6 +1,6 @@
 <?php
 require "../Modelo/conexion.php";
-require "../Modelo/empleados_modelo.php"; // Incluye el modelo
+require "../Modelo/M_empleados.php"; // Incluye el modelo
 
 $modelo = new EmpleadosModelo($conn);// Crea una instancia del modelo
 
