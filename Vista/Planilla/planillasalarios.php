@@ -36,263 +36,33 @@
             </tr>
         </thead>
         <tbody class="table table-striped">
-             <tr >
-              <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar Gonzalez</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
 
-            <tr>
-              <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-
-            <tr>
-              <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            <tr>
-            <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            <tr>
-            <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            <tr>
-            <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            <tr>
-            <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            
-            <tr>
-            <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            <tr>
-            <td class="editable-cell" >1</td>
-              <td class="editable-cell" >Cesar</td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-              <td class="editable-cell" ></td>
-            </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-
+               <?php foreach ($empleados as $empleado) : ?>
+                <tr>
+                    <td><?php echo $empleado['id']; ?></td>
+                    <td><?php echo $empleado['primernombre'] . ' ' . $empleado['primerapellido']; ?></td>                    
+                    <td><?php echo $empleado['sueldo']; ?></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    <td class="editable-cell" ></td>
+                    
+                </tr>
+             <?php endforeach; ?>
+           
         </tbody>
      </table>
      </div>
@@ -368,34 +138,8 @@
     <!-- Añade el enlace al archivo de JavaScript de Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
-    <script>
-    // Escuchar clics en el contenedor principal
-    document.addEventListener('click', function (event) {
-        const clickedElement = event.target;
-
-        // Verificar si el clic ocurrió en una celda editable
-        if (clickedElement.classList.contains('editable-cell')) {
-            const cells = document.querySelectorAll('.editable-cell');
-
-            cells.forEach(cell => cell.classList.remove('editing'));
-
-            // Agregar la clase de edición solo a la celda clicada
-            clickedElement.classList.add('editing');
-
-            const input = document.createElement('input');
-            input.value = clickedElement.innerText;
-
-            input.addEventListener('blur', () => {
-                clickedElement.innerText = input.value;
-                clickedElement.classList.remove('editing');
-            });
-
-            clickedElement.innerHTML = '';
-            clickedElement.appendChild(input);
-            input.focus();
-        }
-    });
-</script>
+    <!-- Script funcionalidad de la tabla -->
+   <Script src="../Vista/Planilla/jsplanillasalario.js"></Script> 
 
 
         

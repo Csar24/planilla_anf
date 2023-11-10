@@ -57,7 +57,7 @@ if (isset($_SESSION['usuario'])) {
         <!-- Submenu -->
         <div class="sub-menu" >
              <div  class= "item1">
-                <a  class="nav-link" href="../Vista/Planilla/planillasalarios.php" id="sub-menu-salario" style="margin: 0.1rem;">
+                <a  class="nav-link" href="../Controlador/planillasalario_visualizar.php" id="sub-menu-salario" style="margin: 0.1rem;">
                     <i class='bx bx-book'></i>
                     <span class="links_name" >Planillas de Salarios</span>
                 </a>
